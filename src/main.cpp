@@ -1,4 +1,4 @@
-// https://github.com/mobizt/Firebase-ESP-Client/blob/main/examples/Firestore/CreateDocuments/CreateDocuments.ino -- Firebase esp32 docs
+// https:// github.com/mobizt/Firebase-ESP-Client/tree/main/examples/Firestore/CreateDocuments
 #include <secrets.h>
 #include <Arduino.h>
 #include <WiFi.h>
@@ -74,6 +74,7 @@ void getWifiFromDb()
     Serial.println(fbdo.errorReason());
   }
 }
+
 // Connect to wifi using saved credentials
 void connectToWifi()
 {
@@ -194,6 +195,7 @@ float getTemp(int pin)
 void setup()
 {
   Serial.begin(9600);
+
   connectToWifi();
   getWifiFromDb();
 
